@@ -1,0 +1,117 @@
+/* Reset defaults */
+body, h2, table, input, button, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #f9f9fb;
+    padding: 30px;
+    color: #333;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Search form */
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 180px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Add button */
+.add-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #1e8449;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #34495e;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
+}
+
+tbody tr:hover {
+    background-color: #eaf2f8;
+}
+
+/* Highlight searched row */
+tr[style*="background-color: #eafaf1"] {
+    background-color: #d6eaf8 !important;
+    font-weight: 600;
+}
+
+/* Action links */
+td a {
+    color: #2980b9;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+td a:hover {
+    text-decoration: underline;
+}

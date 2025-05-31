@@ -1,0 +1,109 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  /* background-color: #f9f9f9; */
+}
+
+/* Responsive Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 12px; /* Reduced gap between cards */
+  padding: 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: transparent;  /* No background, image dominates */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 450px; /* Slightly smaller box height */
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.product-card img {
+  width: 100%;
+  height: 390px; /* Slightly reduced height */
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Title styling */
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 8px 0 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 8px;
+}
+
+/* Price and Cart link area */
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px 10px;
+  font-size: 16px;
+}
+
+.product-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.cart-link {
+  font-size: 20px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.cart-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .product-card img {
+    height: 200px;
+  }
+  .product-title {
+    font-size: 15px;
+  }
+  .product-price, .cart-link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .product-card {
+    min-height: 360px;
+  }
+  .product-card img {
+    height: 200px;
+  }
+}

@@ -1,0 +1,88 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Headers */
+th {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table Cells */
+td {
+  background-color: #fff;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Operations Links */
+a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  td img {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}

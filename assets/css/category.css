@@ -1,0 +1,148 @@
+/* Category Section Styles */
+.category_section {
+  margin-top: 33px; 
+  /* Adjust if necessary */
+  padding: 50px 20px;
+  text-align: center;
+  /* background-color: #f4f4f4; Light background color */
+}
+
+/* Centered Heading */
+.section_heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark color for heading */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Heading Hover Effect */
+.section_heading:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Container Styles for Items */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Item Box Styles */
+.item {
+  width: 250px;
+  text-align: center;
+  /* background-color: #fff; */
+  border-radius: 15px;
+  overflow: hidden;
+  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Item Box Hover Effect */
+.item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Image Styling with Border Radius */
+.item-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%; /* Perfect circle for image */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+/* Image Hover Effect */
+.item-img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Description Styles */
+.item-description {
+  margin-top: 15px;
+}
+
+.item-description p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Description Hover Effect */
+.item-description:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Link Styling (For Shop Page) */
+.item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover Effect for Item Link */
+.item-link:hover .item-img {
+  transform: scale(1.1);
+}
+
+/* Hover Effect for Item Box */
+.item-link:hover {
+  /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category_section {
+    padding: 30px 15px; /* Reduced padding for medium devices */
+    margin-top: 10px; /* Reduced top margin on smaller screens */
+  }
+  
+  .container {
+    gap: 20px;
+  }
+  
+  .item {
+    width: 220px;
+  }
+
+  .item-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category_section {
+    padding: 20px 10px; /* Reduced padding on small devices */
+    margin-top: 5px; /* Further reduced top margin on small screens */
+  }
+  
+  .section_heading {
+    font-size: 28px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for small screens */
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .item-img {
+    width: 150px;
+    height: 150px;
+  }
+}

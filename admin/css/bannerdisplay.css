@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+/* Table Styles */
+.banner-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.banner-table th,
+.banner-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.banner-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.banner-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.banner-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Image Style */
+.banner-img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Operation Buttons */
+.edit-btn,
+.delete-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .banner-table th,
+  .banner-table td {
+    font-size: 14px;
+  }
+
+  .banner-img {
+    max-width: 100px;
+  }
+}

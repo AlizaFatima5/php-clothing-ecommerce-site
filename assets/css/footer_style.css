@@ -1,0 +1,128 @@
+/* Footer container */
+.footer {
+  margin-top: 23px;
+  background-color: #222;
+  color: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #fff;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column a {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a:hover {
+  color: #f39c12;
+  transition: color 0.3s ease;
+}
+
+.contact-info i,
+.social-icons i {
+  color: #f39c12;
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 0.95rem;
+}
+
+.subscribe-form button {
+  background-color: #f39c12;
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #d87e04;
+}
+
+.success-message {
+  color: #4BB543;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #bbb;
+  font-size: 1.3rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+/* Footer bottom copyright */
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

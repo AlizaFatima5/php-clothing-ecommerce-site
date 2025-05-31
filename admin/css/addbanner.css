@@ -1,0 +1,117 @@
+/* Reset default margins and paddings for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for form */
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Form title */
+.form-container h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Styling for labels */
+.form-container label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Styling for input fields */
+.form-container input[type="number"],
+.form-container input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.form-container input[type="number"]:focus,
+.form-container input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button styling */
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Alert message styling */
+.alert {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert.error {
+  background-color: #dc3545;
+}
+
+/* Link styling */
+.check-now {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.check-now a {
+  color: #007bff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.check-now a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

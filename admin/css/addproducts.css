@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  padding: 40px 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #0077cc;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+#imagePreview {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 8px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+form input[type="number"],
+form input[type="text"],
+form input[type="file"] {
+  width: 100%;
+  padding: 14px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Link */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  form input[type="submit"] {
+    font-size: 16px;
+  }
+}

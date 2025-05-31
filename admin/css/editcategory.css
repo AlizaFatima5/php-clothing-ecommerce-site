@@ -1,0 +1,109 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields Styling */
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  padding: 10px 12px;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input[type="text"], input[type="file"], input[type="submit"] {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}

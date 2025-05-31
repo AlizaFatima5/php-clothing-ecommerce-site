@@ -1,0 +1,115 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Page Heading */
+h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Form Styling */
+form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Styling */
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input[type="number"]:focus,
+input[type="file"]:focus {
+  border-color: #007bff;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Back to List Link */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Success/Error Messages */
+.success-msg,
+.error-msg {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.success-msg {
+  background-color: #28a745;
+}
+
+.error-msg {
+  background-color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+}
