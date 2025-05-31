@@ -1,4 +1,4 @@
-# ecommerce website in php sql
+# Ecommerce website in php sql
 # 👗 Dynamic Clothing eCommerce Website in PHP, HTML, CSS, JS
 
 A fully dynamic, responsive **Clothing eCommerce Website** with an integrated **Admin Panel**, built using **Core PHP**, **HTML5**, **CSS3**, **JavaScript**, and **MySQL**.  
