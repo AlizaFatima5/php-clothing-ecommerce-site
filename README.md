@@ -1,7 +1,7 @@
 # Ecommerce website in php sql
 # 👗 Dynamic Clothing eCommerce Website in PHP, HTML, CSS, JS
 
-A fully dynamic, responsive **Clothing eCommerce Website** with an integrated **Admin Panel**, built using **Core PHP**, **HTML5**, **CSS3**, **JavaScript**, and **MySQL**.  
+A fully dynamic, responsive **Clothing eCommerce Website** with an integrated **Admin Panel**, built using **Core PHP**, **HTML**, **CSS**, **JavaScript**, and **MySQL**.  
 This project simulates a real-world online shopping platform for clothing, including admin product management, user registration, cart, and secure checkout system.
 
 ---
@@ -35,7 +35,7 @@ This dynamic eCommerce project is ideal for:
 - 👤 User registration and secure login
 - 💳 Checkout system with order summary
 - 📱 Fully responsive design (desktop + mobile)
-
+  
 ### ⚙️ Admin Panel
 - 🔐 Admin login authentication
 - 📦 Add/Edit/Delete Products
